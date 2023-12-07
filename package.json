@@ -19,14 +19,18 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "source-map-loader": "^4.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "homepage":"https://github.com/Mylicoco/Jouvence-Computer.git"
   },
   "scripts": {
     "server": "json-server -p 3001 -w db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start": " react-scripts start"
+    "start": " react-scripts start", 
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+  
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "tailwindcss": "^3.3.5"
   }
 }
